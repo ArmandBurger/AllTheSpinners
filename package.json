@@ -1,6 +1,6 @@
 {
-  "name": "no-name",
-  "license": "UNLICENSED",
+  "name": "all-the-spinners",
+  "license": "Apache-2.0",
   "dependencies": {
     "@polymer/polymer": "3.5.1",
     "@vaadin/a11y-base": "24.3.8",
@@ -17,6 +17,7 @@
     "@vaadin/component-base": "24.3.8",
     "@vaadin/confirm-dialog": "24.3.8",
     "@vaadin/context-menu": "24.3.8",
+    "@vaadin/cookie-consent": "24.3.8",
     "@vaadin/custom-field": "24.3.8",
     "@vaadin/date-picker": "24.3.8",
     "@vaadin/date-time-picker": "24.3.8",
@@ -105,6 +106,7 @@
       "@vaadin/component-base": "24.3.8",
       "@vaadin/confirm-dialog": "24.3.8",
       "@vaadin/context-menu": "24.3.8",
+      "@vaadin/cookie-consent": "24.3.8",
       "@vaadin/custom-field": "24.3.8",
       "@vaadin/date-picker": "24.3.8",
       "@vaadin/date-time-picker": "24.3.8",
@@ -176,7 +178,7 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "c057c933510a7b6d79346fa9314fe0af890fed1211bf540156c04fdf62589cac"
+    "hash": "c2f621496699991f12030e9d3621ad2ec8b61e5d030db7d397f6fc5c422de92d"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -245,6 +247,7 @@
     "@vaadin/tooltip": "$@vaadin/tooltip",
     "@vaadin/overlay": "$@vaadin/overlay",
     "@vaadin/a11y-base": "$@vaadin/a11y-base",
-    "@vaadin/side-nav": "$@vaadin/side-nav"
+    "@vaadin/side-nav": "$@vaadin/side-nav",
+    "@vaadin/cookie-consent": "$@vaadin/cookie-consent"
   }
 }

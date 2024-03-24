@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.vaadin.addons.mygroup</groupId>
-    <artifactId>addon-example</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <groupId>org.vaadin.addons.armandburger</groupId>
+    <artifactId>all-the-spinners</artifactId>
+    <version>24.0.0-SNAPSHOT</version>
     <name>Add-on for Vaadin</name>
-    <description>###Project Name###</description>
+    <description>AllTheSpinners</description>
 
     <properties>
         <vaadin.version>24.3.7</vaadin.version>
@@ -18,9 +17,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+
     <organization>
-        <name>###author###</name>
+        <name>Armand Burger</name>
+        <url>https://github.com/ArmandBurger</url>
     </organization>
+
     <licenses>
         <license>
             <name>Apache 2</name>
@@ -28,6 +30,7 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -49,12 +52,14 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+
         <repository>
             <id>vaadin-prereleases</id>
             <url>
                 https://maven.vaadin.com/vaadin-prereleases/
             </url>
         </repository>
+
         <!-- Repository used by many Vaadin add-ons -->
         <repository>
             <id>Vaadin Directory</id>
@@ -71,6 +76,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+
         <pluginRepository>
             <id>vaadin-prereleases</id>
             <url>
@@ -85,11 +91,13 @@
             <!-- Consider limiting the dependencies to flow-server only something, but for most end users depending on vaadin-core is ok -->
             <artifactId>vaadin-core</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-testbench</artifactId>
@@ -120,7 +128,7 @@
                     <excludes>
                         <exclude>META-INF/VAADIN/config/flow-build-info.json</exclude>
                     </excludes>
-                </configuration>                     
+                </configuration>
             </plugin>
 
             <plugin>
@@ -190,6 +198,7 @@
                 </plugins>
             </build>
         </profile>
+
         <profile>
             <id>directory</id>
             <build>
@@ -260,6 +269,7 @@
                 </plugins>
             </build>
         </profile>
+
         <profile>
             <id>it</id>
             <build>
@@ -325,5 +335,3 @@
         </profile>
     </profiles>
 </project>
-
-
